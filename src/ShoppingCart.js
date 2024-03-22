@@ -12,6 +12,7 @@ const ShoppingCart = function({items}){
                 <ul>
                   <li>Price: ${i.price}</li>
                   <li>Quantity: {i.quantity}</li>
+                  <li>Subtotal: ${i.price * i.quantity}</li>
                 </ul>
               </div>
             ))}
