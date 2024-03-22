@@ -1,7 +1,12 @@
 import logo from './logo.svg';
+import cats, {meow} from './cats'
+import {add, multiply} from './helpers'
 import './App.css';
 
 function App() {
+  console.log(multiply(4,9))
+  console.log(cats)
+  console.log(meow())
   return (
     <div className="App">
       <header className="App-header">
