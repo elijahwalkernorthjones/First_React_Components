@@ -1,0 +1,10 @@
+.CartItem-header {
+    text-align: center;
+}
+
+.CartItem-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}

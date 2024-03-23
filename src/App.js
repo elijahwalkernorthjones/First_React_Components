@@ -1,13 +1,25 @@
 import React from 'react';
+import logo from './logo.svg'
+import Alert from './Alert';
 import items from './items';
+import moreItems from './moreItems';
 import ShoppingCart from './ShoppingCart';
-// import cats, {meow} from './cats'
-// import {add, multiply} from './helpers'
 import './App.css';
 
 function App() {
   return (
-    <ShoppingCart items={items}/>
+    <div>
+      <Alert variant="success">
+        <h1>Welcome Back!</h1>
+      </Alert>
+      <Alert variant="danger">
+        <h1>OH NO!</h1>
+      </Alert>
+      
+      <img src={logo} id="logo"/>
+      <ShoppingCart items={items} username="Carly"/>
+      <ShoppingCart items={moreItems} username="Rusty"/>
+    </div>
   )
 }
 
